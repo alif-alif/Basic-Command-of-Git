@@ -1,0 +1,288 @@
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin
+$ git init
+Initialized empty Git repository in C:/xampp/htdocs/adminlogin/.git/
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git config --global user.name "alif"
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git config --global user.email "alif017@gmail.com"
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git config user.name "alif3"
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git config user.name "suppervpn01@gmail.com "
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git config --list
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+credential.helper=manager
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+user.name=alif
+user.email=alif017@gmail.com
+gui.recentrepo=E:/git
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=suppervpn01@gmail.com
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$
+
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git add connect.php
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   connect.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data_table.php
+        dist/
+        f_password.php
+        home.php
+        login.php
+        logout.php
+        plugins/
+        recover-password.php
+        register.php
+        resource/
+        savedatacore.php
+        savedatacore_fp.php
+        savedatacore_login.php
+        welcome.php
+
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git add --all
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git add .
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git log
+
+commit cc341e590be3d8ed437d6d9a1ed17b199550cb50 (HEAD -> master)
+Author: suppervpn01@gmail.com <alif017@gmail.com>
+Date:   Sun Jul 12 12:39:24 2020 +0600
+
+    adminLTD login page
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git log --oneline
+
+cc341e5 (HEAD -> master) adminLTD login page
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git log --oneline
+cc341e5 (HEAD -> master) adminLTD login page
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin (master)
+$ git checkout cc341e5   ========>>>>>>>>>>>>> go to the previwes status.
+Note: switching to 'cc341e5'.
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((cc341e5...))
+$ git checkout master
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((cc341e5...))
+$ git diff ===================>>>>>>>>>> which kind changed has been previwes stage.
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((cc341e5...))
+$ git show cc341e5 ====================>>>>>>> what is change into code showing by this command.
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((0db8478...))
+$ git log --oneline
+
+
+0db8478 (HEAD) gittext file add one line
+cc341e5 (master) adminLTD login page
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((0db8478...))
+$ git diff 0db8478 cc341e5
+diff --git a/gittest.txt b/gittest.txt
+deleted file mode 100644
+index 646c60e..0000000
+--- a/gittest.txt
++++ /dev/null
+@@ -1,3 +0,0 @@
+-afafafafa
+-
+-babaabbabab
+\ No newline at end of file
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((0db8478...))
+$ git diff --staged    ==========>>>>> after the file going to staged mode after that need to show which 					kind of changed have been done then showing by this command.
+
+diff --git a/gittest.txt b/gittest.txt
+index 646c60e..a0d3088 100644
+--- a/gittest.txt
++++ b/gittest.txt
+@@ -1,3 +1,6 @@
+ afafafafa
+
+-babaabbabab
+\ No newline at end of file
++babaabbabab
++
++
++cvcvcvcv
+\ No newline at end of file
+
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((0db8478...))
+$ git rm -f gittest.txt  =====>>> remove file form git
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((0db8478...))
+$ git status
+HEAD detached from cc341e5
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    gittest.txt
+
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin ((0db8478...))
+$ git reset HEAD gittest.txt  ====>>> remove form stage area.
+
+
+Unstaged changes after reset:
+D       gittest.txt
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ ssh-keygen.exe
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/alif0/.ssh/id_rsa): git.keys
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in git.keys
+Your public key has been saved in git.keys.pub
+The key fingerprint is:
+SHA256:KZRK1OrMncUQEApTCYJoy7ZwEnDuaE5jaUdalunHRT4 alif0@DESKTOP-5A1KCT4
+The key's randomart image is:
++---[RSA 3072]----+
+|Xoo.++.o         |
+|=*.oo =.         |
+|o.+*..oE         |
+|o*O.oo. +.       | 
+|+@o*.+.oS        |
+|*.o = o.         |
+| .               |
+|                 |
+|                 |
++----[SHA256]-----+
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ eval $(ssh-agent -s)
+Agent pid 1101
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ ssh-add ~/.ssh/id_rsa   ===============>>>>> connect destok to github account syn
+Identity added: /c/Users/alif0/.ssh/id_rsa (alif0@DESKTOP-5A1KCT4)
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ clip < ~/.ssh/id_rsa.pub  ===>>>>> copy the ssh key by this command
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git clone git@github.com:alif-alif/gitpass.git
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git clone git@github.com:alif-alif/gitpass.git newpass
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git fetch
+
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 661 bytes | 47.00 KiB/s, done.
+From https://github.com/alif-alif/gitpass
+   376eb84..001c955  master     -> origin/master
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitpass/
+        newpass/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git pull
+Updating 376eb84..001c955
+Fast-forward
+ test.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git branch newidbranch
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git branch
+* master
+  newidbranch
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git checkout newidbranch
+Switched to branch 'newidbranch'
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (newidbranch)
+$ git branch
+  master
+* newidbranch
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (newidbranch)
+$ git checkout -b home-branch
+Switched to a new branch 'home-branch'
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass (master)
+$ git branch -D newidbranch  =======>>>> branch deleted
+Deleted branch newidbranch (was 001c955).
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass/stach (master)
+$ git stash    ========>>> hide the document without deleted.
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass/stach (master)
+$ git stash pop   ======>>> came back the hide file.
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass/stach (master)
+$ git stash list ====> show the stash code
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass/stach (master)
+$ git stash pop [ID NUMBER] ====>> indivucle conde stash.
+
+alif0@DESKTOP-5A1KCT4 MINGW64 /c/xampp/htdocs/adminlogin/gitpass/stach (master)
+$ git clean -f -n   ======>>>> deleted the Untracked files.
+
+
+
+
+
+
+ 
+
+
+
